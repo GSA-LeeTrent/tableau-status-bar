@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0806.1229                               -->
+<workbook original-version='18.1' source-build='2023.1.5 (20231.23.0806.1229)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='jobrun-percent-complete' inline='true' name='federated.0duwdjy0r5umyj1c5itbp03d9lpf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='jobrun-percent-complete' name='textscan.11rkwrk13twcgf16hc7c40k6pakk'>
+            <connection class='textscan' directory='G:/My Drive/CADW/cadw_dashboard/Tableau/status-bar' filename='jobrun-percent-complete.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.11rkwrk13twcgf16hc7c40k6pakk' name='jobrun-percent-complete.csv' table='[jobrun-percent-complete#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='record_date' ordinal='0' />
+            <column datatype='integer' name='total_runs' ordinal='1' />
+            <column datatype='integer' name='completed_runs' ordinal='2' />
+            <column datatype='real' name='pct_completed' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.11rkwrk13twcgf16hc7c40k6pakk' name='jobrun-percent-complete.csv' table='[jobrun-percent-complete#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='record_date' ordinal='0' />
+            <column datatype='integer' name='total_runs' ordinal='1' />
+            <column datatype='integer' name='completed_runs' ordinal='2' />
+            <column datatype='real' name='pct_completed' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[jobrun-percent-complete.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[record_date]</local-name>
+            <parent-name>[jobrun-percent-complete.csv]</parent-name>
+            <remote-alias>record_date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jobrun-percent-complete.csv_D914884F25EC438EBE08B357CE119945]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_runs]</local-name>
+            <parent-name>[jobrun-percent-complete.csv]</parent-name>
+            <remote-alias>total_runs</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jobrun-percent-complete.csv_D914884F25EC438EBE08B357CE119945]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>completed_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[completed_runs]</local-name>
+            <parent-name>[jobrun-percent-complete.csv]</parent-name>
+            <remote-alias>completed_runs</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jobrun-percent-complete.csv_D914884F25EC438EBE08B357CE119945]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_completed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_completed]</local-name>
+            <parent-name>[jobrun-percent-complete.csv]</parent-name>
+            <remote-alias>pct_completed</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[jobrun-percent-complete.csv_D914884F25EC438EBE08B357CE119945]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='jobrun-percent-complete.csv' datatype='table' name='[__tableau_internal_object_id__].[jobrun-percent-complete.csv_D914884F25EC438EBE08B357CE119945]' role='measure' type='quantitative' />
+      <column caption='Completed Runs' datatype='integer' name='[completed_runs]' role='measure' type='quantitative' />
+      <column caption='Pct Completed' datatype='real' name='[pct_completed]' role='measure' type='quantitative' />
+      <column caption='Record Date' datatype='date' name='[record_date]' role='dimension' type='ordinal' />
+      <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='jobrun-percent-complete.csv' id='jobrun-percent-complete.csv_D914884F25EC438EBE08B357CE119945'>
+            <properties context=''>
+              <relation connection='textscan.11rkwrk13twcgf16hc7c40k6pakk' name='jobrun-percent-complete.csv' table='[jobrun-percent-complete#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='record_date' ordinal='0' />
+                  <column datatype='integer' name='total_runs' ordinal='1' />
+                  <column datatype='integer' name='completed_runs' ordinal='2' />
+                  <column datatype='real' name='pct_completed' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Percent Complete'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='jobrun-percent-complete' name='federated.0duwdjy0r5umyj1c5itbp03d9lpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0duwdjy0r5umyj1c5itbp03d9lpf'>
+            <column caption='MIN(1)' datatype='integer' name='[Calculation_5520568749106356226]' role='measure' type='quantitative' user:unnamed='Percent Complete'>
+              <calculation class='tableau' formula='MIN(1)' />
+            </column>
+            <column-instance column='[record_date]' derivation='None' name='[none:record_date:ok]' pivot='key' type='ordinal' />
+            <column caption='Pct Completed' datatype='real' name='[pct_completed]' role='measure' type='quantitative' />
+            <column caption='Record Date' datatype='date' name='[record_date]' role='dimension' type='ordinal' />
+            <column-instance column='[pct_completed]' derivation='Sum' name='[sum:pct_completed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_5520568749106356226]' derivation='User' name='[usr:Calculation_5520568749106356226:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[none:record_date:ok]'>
+            <groupfilter function='member' level='[none:record_date:ok]' member='#2024-06-06#' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[none:record_date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[usr:Calculation_5520568749106356226:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[usr:Calculation_5520568749106356226:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[usr:Calculation_5520568749106356226:qk]' value='p0%' />
+            <format attr='text-format' field='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[sum:pct_completed:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[sum:pct_completed:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[usr:Calculation_5520568749106356226:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+                <format attr='mark-color' value='#898989' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>([federated.0duwdjy0r5umyj1c5itbp03d9lpf].[sum:pct_completed:qk] + [federated.0duwdjy0r5umyj1c5itbp03d9lpf].[usr:Calculation_5520568749106356226:qk])</cols>
+      </table>
+      <simple-id uuid='{332E8505-0B86-4FFE-9FAF-334979CBFC9F}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Percent Complete'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[none:record_date:ok]' type='filter' />
+            <card pane-specification-id='1' param='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[none:Calculation_5520568749106323457:qk]</field>
+            <field>[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[none:record_date:ok]</field>
+            <field>[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[yr:record_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F368A1D9-BA8F-49F5-9B75-19026A79A6A7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='87' name='Percent Complete' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
