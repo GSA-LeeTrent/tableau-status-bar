@@ -9,6 +9,7 @@
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SheetIdentifierTracking />
+    <SortTagCleanup />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
   <preferences>
@@ -117,6 +118,7 @@
       <column caption='Pct Completed' datatype='real' name='[pct_completed]' role='measure' type='quantitative' />
       <column caption='Record Date' datatype='date' name='[record_date]' role='dimension' type='ordinal' />
       <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+      <column-instance column='[record_date]' derivation='None' name='[none:record_date:ok]' pivot='key' type='ordinal' />
       <column-instance column='[pct_completed]' derivation='Sum' name='[sum:pct_completed:qk]' pivot='key' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
@@ -134,6 +136,9 @@
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
+      <default-sorts>
+        <natural-sort column='[none:record_date:ok]' direction='DESC' />
+      </default-sorts>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
           <object caption='jobrun-percent-complete.csv' id='jobrun-percent-complete.csv_D914884F25EC438EBE08B357CE119945'>
@@ -170,7 +175,8 @@
             <column-instance column='[Calculation_5520568749106356226]' derivation='User' name='[usr:Calculation_5520568749106356226:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[none:record_date:ok]'>
-            <groupfilter function='member' level='[none:record_date:ok]' member='#2024-06-08#' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:record_date:ok]' member='#2024-11-15#' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <preset type='last-values' />
           </filter>
           <slices>
             <column>[federated.0duwdjy0r5umyj1c5itbp03d9lpf].[none:record_date:ok]</column>
